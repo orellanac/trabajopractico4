@@ -1,8 +1,11 @@
 package org.trabajopractico4.gimnasio;
 
+import java.util.*;
+
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
+import org.trabajopractico4.escuela.*;
 
 @Entity
 public class Gimnasio {
@@ -17,6 +20,21 @@ public class Gimnasio {
 	public void setNombre_gim(String nombre_gim) {
 		this.nombre_gim = nombre_gim;
 	}
+@OneToMany (mappedBy="gimnasio")
+private Collection <Escuela> escuela;
+
+public Collection<Escuela> getEscuela() {
+	return escuela;
+}
+
+public void setEscuela(Collection<Escuela> escuela) {
+	this.escuela = escuela;
+}
+
+
+
+
+	
 	
     
 } 

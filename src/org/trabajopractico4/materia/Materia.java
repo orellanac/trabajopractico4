@@ -1,8 +1,11 @@
   package org.trabajopractico4.materia;
 
+import java.util.*;
+
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
+import org.trabajopractico4.escuela.*;
 
 @Entity
 public class Materia {
@@ -17,5 +20,16 @@ public class Materia {
  {
 	 return nombre_materia;
  }
+ @OneToMany(mappedBy="materia")
+   private Collection <Escuela> escuela;
+
+   public Collection<Escuela> getEscuela() {
+	return escuela;
+   }
+
+   public void setEscuela(Collection<Escuela> escuela) {
+	  this.escuela = escuela; 
+      }
+ 
  }
 

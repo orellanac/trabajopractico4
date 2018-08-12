@@ -1,13 +1,13 @@
 
 package org.trabajopractico4.alumno;
 
-import java.util.*;
 
 import javax.persistence.*;
 import org.openxava.annotations.*;
-import org.trabajopractico4.materia.*;
+import org.trabajopractico4.persona.*;
+
 @Entity
-public class Alumno {
+public class Alumno extends Persona {
 	@Column (length=22)@Required
    private String nombre;
 	
@@ -27,7 +27,7 @@ public class Alumno {
 		this.apellido = apellido;
 	}
 	@Column (length=22)@Required	
-   private String direccion;
+    private String direccion;
 	
 	public String getDireccion() {
 		return direccion;
@@ -53,6 +53,9 @@ public class Alumno {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	kmmclkmclmsakc
+	
+/*	
 @OneToMany(mappedBy="Materia")
 private Collection <Materia> materia;
 
@@ -62,5 +65,7 @@ public Collection <Materia> getMateria() {
 public void setMateria(Collection<Materia> materia) {
 	this.materia = materia;
 }
-
+*/
+	
+	
 }

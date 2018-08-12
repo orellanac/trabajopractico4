@@ -3,8 +3,10 @@ package org.trabajopractico4.profesor;
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
+import org.trabajopractico4.persona.*;
 
-public class Profesor {
+@Entity
+public class Profesor extends Persona{
 	 @Column(length=11) @Required
 	private String nombre_profe;
 
