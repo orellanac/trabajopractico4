@@ -86,9 +86,5 @@ public void setPersona(Persona persona) {
 	this.persona = persona;
 }
 
-/*
- *hola ronaldo como estas   
- * 
- */
  	
 }

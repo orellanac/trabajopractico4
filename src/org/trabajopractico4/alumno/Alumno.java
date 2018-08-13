@@ -1,16 +1,23 @@
 
 package org.trabajopractico4.alumno;
-
-
-
 import javax.persistence.*;
 import org.openxava.annotations.*;
 import org.trabajopractico4.persona.*;
 
 @Entity
 public class Alumno extends Persona {
+	@Column (length=11)@Required
+	private String  dni;
+	
+	public String getDni() {
+		return dni;
+	}
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+	
 	@Column (length=22)@Required
-   private String nombre;
+     private String nombre;
 	
 	public String getNombre() {
 		return nombre;
@@ -54,7 +61,6 @@ public class Alumno extends Persona {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	kmmclkmclmsakc
 	
 /*	
 @OneToMany(mappedBy="Materia")
