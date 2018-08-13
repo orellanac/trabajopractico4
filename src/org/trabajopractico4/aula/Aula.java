@@ -14,6 +14,17 @@ public String getNombre_aula() {
 	return nombre_aula;
 }
 
+@Column(length=11) @Required
+private String tipo_aula;
+
+public String getTipo_aula() {
+	return tipo_aula;
+}
+
+public void setTipo_aula(String tipo_aula) {
+	this.tipo_aula = tipo_aula;
+}
+
 public void setNombre_aula(String nombre_aula) {
 	this.nombre_aula = nombre_aula;
 }
