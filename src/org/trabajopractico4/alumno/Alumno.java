@@ -2,6 +2,7 @@
 package org.trabajopractico4.alumno;
 
 
+
 import javax.persistence.*;
 import org.openxava.annotations.*;
 import org.trabajopractico4.persona.*;

@@ -1,7 +1,6 @@
   package org.trabajopractico4.materia;
 
 import java.util.*;
-
 import javax.persistence.*;
 
 import org.openxava.annotations.*;

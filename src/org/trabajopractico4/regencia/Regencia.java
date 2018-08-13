@@ -2,6 +2,7 @@ package org.trabajopractico4.regencia;
 
 import java.util.*;
 
+
 import javax.persistence.*;
 
 import org.trabajopractico4.escuela.*;

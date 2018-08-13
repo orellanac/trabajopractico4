@@ -1,7 +1,6 @@
 package org.trabajopractico4.aulataller;
 
 import javax.persistence.*;
-
 import org.openxava.annotations.*;
 import org.trabajopractico4.aula.*;
 
@@ -17,7 +16,5 @@ public String getNombre_aulataller() {
 public void setNombre_aulataller(String nombre_aulataller) {
 	this.nombre_aulataller = nombre_aulataller;
 }
-
- 
  
 }

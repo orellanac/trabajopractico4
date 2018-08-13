@@ -2,6 +2,7 @@ package org.trabajopractico4.preceptor;
 
 import javax.persistence.*;
 
+
 import org.openxava.annotations.*;
 import org.trabajopractico4.persona.*;
 
