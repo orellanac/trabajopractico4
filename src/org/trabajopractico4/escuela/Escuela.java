@@ -15,12 +15,12 @@ import org.trabajopractico4.regencia.*;
 @Entity
 public class Escuela extends Gestion{
 //atributos 
- @Column (length=22)@Required
+  @Column (length=22)@Required
   private String nombre_escuela;
  
-public String getNombre_escuela() {
-	return nombre_escuela;
-}
+  public String getNombre_escuela() {
+	 return nombre_escuela;
+   }
 
 public void setNombre_escuela(String nombre_escuela) {
 	this.nombre_escuela = nombre_escuela;

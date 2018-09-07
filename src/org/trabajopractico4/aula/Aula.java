@@ -28,7 +28,7 @@ public void setTipo_aula(String tipo_aula) {
 public void setNombre_aula(String nombre_aula) {
 	this.nombre_aula = nombre_aula;
 }
-@OneToMany (mappedBy="aula")
+@OneToMany(mappedBy="aula")
 private Collection <Escuela> escuela;
 
 public Collection<Escuela> getEscuela() {
@@ -38,5 +38,4 @@ public Collection<Escuela> getEscuela() {
 public void setEscuela(Collection<Escuela> escuela) {
 	this.escuela = escuela;
 }
-
 }

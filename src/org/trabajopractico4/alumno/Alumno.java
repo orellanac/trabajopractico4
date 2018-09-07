@@ -61,7 +61,19 @@ public class Alumno extends Persona {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	svsdv
+	@Column (length=11) @Required
+	private String ncontrol;
+
+	public String getNcontrol() {
+		return ncontrol;
+	}
+	public void setNcontrol(String ncontrol) {
+		this.ncontrol = ncontrol;
+	}
+	
+	
+	
+	
 /*	
 @OneToMany(mappedBy="Materia")
 private Collection <Materia> materia;
@@ -73,6 +85,5 @@ public void setMateria(Collection<Materia> materia) {
 	this.materia = materia;
 }
 */
-	
 	
 }
