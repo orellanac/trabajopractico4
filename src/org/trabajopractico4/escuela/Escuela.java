@@ -25,6 +25,16 @@ public class Escuela extends Gestion{
 public void setNombre_escuela(String nombre_escuela) {
 	this.nombre_escuela = nombre_escuela;
 }
+@Column (length=11) @Required
+private String telefono;
+
+public String getTelefono() {
+	return telefono;
+}
+
+public void setTelefono(String telefono) {
+	this.telefono = telefono;
+}
 
 @ManyToOne
   private Materia materia;
