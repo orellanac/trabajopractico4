@@ -46,6 +46,17 @@ public String getEmail() {
 public void setEmail(String email) {
 	this.email = email;
 }
+@Column (length=11) @Required
+private String direccion;
+
+
+public String getDireccion() {
+	return direccion;
+}
+
+public void setDireccion(String direccion) {
+	this.direccion = direccion;
+}
 
 @ManyToOne
   private Materia materia;
