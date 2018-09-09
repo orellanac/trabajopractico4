@@ -30,8 +30,18 @@ public class Gimnasio {
 	public void setNombre_cliente(String nombre_cliente) {
 		this.nombre_cliente = nombre_cliente;
 	}
+	@Column (length=11) @Required
+	private String tipo_pagos;
 	
-@OneToMany (mappedBy="gimnasio")
+	public String getTipo_pagos() {
+		return tipo_pagos;
+	}
+
+	public void setTipo_pagos(String tipo_pagos) {
+		this.tipo_pagos = tipo_pagos;
+	}
+	
+	@OneToMany (mappedBy="gimnasio")
 private Collection <Escuela> escuela;
 
 public Collection<Escuela> getEscuela() {
