@@ -36,6 +36,17 @@ public void setTelefono(String telefono) {
 	this.telefono = telefono;
 }
 
+@Column (length=11) @Required
+private String email;
+
+public String getEmail() {
+	return email;
+}
+
+public void setEmail(String email) {
+	this.email = email;
+}
+
 @ManyToOne
   private Materia materia;
 public Materia getMateria() {
