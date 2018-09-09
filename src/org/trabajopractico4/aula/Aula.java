@@ -28,6 +28,17 @@ public void setTipo_aula(String tipo_aula) {
 public void setNombre_aula(String nombre_aula) {
 	this.nombre_aula = nombre_aula;
 }
+@Column (length=11) @Required
+private int capacidad;
+
+public int getCapacidad() {
+	return capacidad;
+}
+
+public void setCapacidad(int capacidad) {
+	this.capacidad = capacidad;
+}
+
 @OneToMany(mappedBy="aula")
 private Collection <Escuela> escuela;
 
