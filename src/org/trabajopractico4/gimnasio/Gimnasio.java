@@ -20,6 +20,17 @@ public class Gimnasio {
 	public void setNombre_gim(String nombre_gim) {
 		this.nombre_gim = nombre_gim;
 	}
+	@Column (length=11) @Required
+	private String nombre_cliente;
+	
+    public String getNombre_cliente() {
+		return nombre_cliente;
+	}
+
+	public void setNombre_cliente(String nombre_cliente) {
+		this.nombre_cliente = nombre_cliente;
+	}
+	
 @OneToMany (mappedBy="gimnasio")
 private Collection <Escuela> escuela;
 
@@ -30,11 +41,6 @@ public Collection<Escuela> getEscuela() {
 public void setEscuela(Collection<Escuela> escuela) {
 	this.escuela = escuela;
 }
-
-
-
-
-	
 	
     
 } 
