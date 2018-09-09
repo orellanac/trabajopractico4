@@ -19,8 +19,17 @@ public class Persona {
    public void setNombre_persona(String nombre_persona) {
 	   this.nombre_persona = nombre_persona;
     }
-   
-   @OneToMany (mappedBy="persona")
+   @Column (length=11)@Required
+   private String edad;
+  
+   public String getEdad() {
+	return edad;
+}
+
+public void setEdad(String edad) {
+	this.edad = edad;
+}
+@OneToMany (mappedBy="persona")
  private Collection <Escuela> escuela;
 
 public Collection<Escuela> getEscuela() {
@@ -31,7 +40,4 @@ public void setEscuela(Collection<Escuela> escuela) {
 	this.escuela = escuela;
 }
    
-   
-   
- 
 }
